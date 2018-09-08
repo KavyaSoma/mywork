@@ -1,0 +1,1 @@
+Route::get('/checkshortname/club/{shortname}','ClubController@clubname');

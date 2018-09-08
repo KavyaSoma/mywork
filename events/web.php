@@ -1,0 +1,13 @@
+Route::get('/getoldevents/{type}/{id}','EventController@getOldEntries');
+Route::get('/newevent','EventController@newevent');
+Route::get('/checkshortname/event/{shortname}','EventController@checkshortname');
+Route::get('/addevent/{event_id}','EventController@addEvent');
+Route::post('/addevent/{event_id}','EventController@saveEvent');
+Route::get('/eventtime/{event_id}','EventController@eventTime');
+Route::post('/eventtime/{event_id}','EventController@saveeventTime');
+Route::get('/venue-event/{event_id}','EventController@venueEvent');
+Route::get('/venue-event/{event_id}/{id}','EventController@editVenueEvent');
+Route::post('/venue-event/{event_id}','EventController@saveVenueEvent');
+Route::get('/subevent/{event_id}','EventController@subEvent');
+Route::get('/subevent/{event_id}/{sub_event_id}','EventController@editSubEvent');
+Route::post('/subevent/{event_id}','EventController@saveSubEvent');
